@@ -5,11 +5,23 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "cross-env NODE_ENV=production node server.js",
+    "release": "cross-env NODE_ENV=production next build"
   },
   "dependencies": {
     "next": "10.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "classnames": "^2.2.6",
+    "framer-motion": "^2.9.1",
+    "next-images": "^1.6.0",
+    "sass": "^1.27.0",
+    "spdy": "^4.0.2",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "swr": "^0.3.5"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
   }
 }
