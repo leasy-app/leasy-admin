@@ -1,0 +1,36 @@
+@import "../../styles/vars.scss";
+
+.button{
+    background-color: #2FDF84;
+    padding: 8px 16px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 8px;
+    &:hover{
+        background-color: darken($color: #2FDF84, $amount: 5);
+    }
+    &:active{
+        background-color: darken($color: #2FDF84, $amount: 10);
+    }
+}
+
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+    img{
+
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.text{
+    color: $text;
+    font-weight: 700;
+}

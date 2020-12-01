@@ -1,0 +1,30 @@
+@import "./googlesans.css";
+
+* {
+  font-family: GoogleSans;
+  font-weight: 300;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+#__next {
+  min-height: 100%;
+  height: 100%;
+}
+*{
+  
+  box-sizing: border-box;
+}
