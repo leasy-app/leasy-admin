@@ -1,0 +1,38 @@
+@import "../styles/vars.scss";
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mocker{
+    height: 100%;
+}
+.loginPane{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoSet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px;
+}
+
+.logo{
+    width: 56px;
+
+}
+.logoType{
+    font-weight: 700;
+    margin: 16px;
+    font-size: 24px;
+    color: $primary;
+}

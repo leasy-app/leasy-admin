@@ -1,0 +1,14 @@
+@import "../../styles/vars.scss";
+
+.inputHolder{
+    background-color: rgba($color: $text, $alpha: 0.08);
+    padding: 8px 24px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.input{
+    border: none;
+    outline: none;
+    background: none;
+}
