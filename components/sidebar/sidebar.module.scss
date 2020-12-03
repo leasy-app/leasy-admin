@@ -1,0 +1,78 @@
+@import "../../styles/vars.scss";
+
+.sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.fspace1{
+    flex: 1;
+}
+.fspace2{
+    flex: 2;
+}
+
+.sidebarButton{
+    // background-color: #2FDF84;
+    padding: 8px 16px;
+    margin: 8px 32px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    // justify-content: center;
+    flex-direction: row;
+    border-radius: 8px;
+    &:hover{
+        background-color: rgba($color: $primary, $alpha: .2);
+    }
+    // &:active{
+    //     background-color: darken($color: #2FDF84, $amount: 10);
+    // }
+    &.active{
+        background-color: rgba($color: $primary, $alpha: .3);
+    }
+}
+
+.active{}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    img{
+
+        // width: 18px;
+        width: auto;
+        height: 18px;
+    }
+}
+
+.text{
+    color: $text;
+    font-weight: 700;
+}
+
+
+
+.logoSet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+
+.logo{
+    width: 56px;
+
+}
+.logoType{
+    font-weight: 700;
+    margin: 16px;
+    font-size: 24px;
+    color: $primary;
+}

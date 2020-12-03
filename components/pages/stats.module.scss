@@ -1,0 +1,29 @@
+@import "../../styles/vars.scss";
+
+.page{
+    height: 100%;
+    padding: 10% 0%;
+}
+
+.tileRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.tile{
+    display: flex;
+    flex-direction: row;
+    margin: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tileIcon{
+    width: 48px;
+    height: auto;
+}
+
+.tileVal{
+    margin: 0 16px;
+    font-weight: 700;
+}
