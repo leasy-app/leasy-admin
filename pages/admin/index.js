@@ -5,6 +5,7 @@ import styles from './index.module.scss'
 import { useRouter } from 'next/router'
 import Sidebar from '../../components/sidebar/sidebar';
 import StatsPage from '../../components/pages/stats';
+import CatsPage from '../../components/pages/cats';
 
 export default function Admin() {
   let router = useRouter();
@@ -40,7 +41,9 @@ export default function Admin() {
             (() => {
               if(state.page === 0){
                 return <StatsPage/>
-              } 
+              }else if(state.page === 1){
+                return <CatsPage/>
+              }
             })()
           }
       </div>
