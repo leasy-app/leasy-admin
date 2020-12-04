@@ -27,7 +27,24 @@
 
 .addCat{
     display: flex;
+    flex-direction: column;
     flex: 1;
+    align-items: center;
+}
+
+.addCatImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 150px;
+    height: 64px;
+    margin: 24px;
+    box-shadow: 1px 1px 6px 0px rgba($color: $primary, $alpha: 0.5);
+}
+.addCatIcon{
+    width: 32px;
+    height: auto;
 }
 .tileRow{
     display: flex;
