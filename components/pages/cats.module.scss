@@ -32,6 +32,10 @@
     align-items: center;
 }
 
+.tradInput{
+    display: none;
+}
+
 .addCatImage{
     display: flex;
     justify-content: center;
@@ -42,10 +46,20 @@
     margin: 24px;
     box-shadow: 1px 1px 6px 0px rgba($color: $primary, $alpha: 0.5);
 }
+.addCatImage:hover{
+    cursor: pointer;
+}
 .addCatIcon{
     width: 32px;
     height: auto;
 }
+
+.catImage{
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+}
+
 .tileRow{
     display: flex;
     flex-direction: row;
