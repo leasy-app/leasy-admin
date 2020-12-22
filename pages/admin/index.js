@@ -8,6 +8,7 @@ import StatsPage from '../../components/pages/stats';
 import CatsPage from '../../components/pages/cats';
 import PostsPage from '../../components/pages/posts';
 import CoursesPage from '../../components/pages/courses';
+import UsersPage from '../../components/pages/users';
 
 export default function Admin() {
   let router = useRouter();
@@ -49,6 +50,8 @@ export default function Admin() {
                 return <PostsPage/>
               }else if(state.page === 3){
                 return <CoursesPage/>
+              }else if(state.page === 4){
+                return <UsersPage/>
               }
             })()
           }
