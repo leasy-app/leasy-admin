@@ -7,6 +7,7 @@ import Sidebar from '../../components/sidebar/sidebar';
 import StatsPage from '../../components/pages/stats';
 import CatsPage from '../../components/pages/cats';
 import PostsPage from '../../components/pages/posts';
+import CoursesPage from '../../components/pages/courses';
 
 export default function Admin() {
   let router = useRouter();
@@ -46,6 +47,8 @@ export default function Admin() {
                 return <CatsPage/>
               }else if(state.page === 2){
                 return <PostsPage/>
+              }else if(state.page === 3){
+                return <CoursesPage/>
               }
             })()
           }
