@@ -1,0 +1,42 @@
+@import "../../styles/vars.scss";
+
+.user{
+    width: 40%;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.userPhoto{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.name{
+    font-weight: 500;
+}
+
+.indicator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicatorName{
+    font-weight: 500;
+}
+
+.readInd{
+    font-weight: 700;
+    color: $primary;
+}
+
+.writeInd{
+    font-weight: 700;
+    color: $secondary;
+}
