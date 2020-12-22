@@ -1,0 +1,61 @@
+@import "../../styles/vars.scss";
+
+.post{
+    width: 50%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+}
+
+.namesHolder{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+
+.title{
+    margin: 4px;
+    font-weight: 600;
+}
+
+.description{
+    margin: 4px;
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.authorHolder{
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+    align-items: center;
+}
+
+.authorName{
+    font-size: 13px;
+}
+
+.bullet{
+ margin: 0px 8px;
+ font-size: 13px;
+}
+
+.date{
+    font-size: 13px;
+
+}
+
+.image{
+    height: auto;
+    width: 100px;
+}
+.authorPhoto{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin: 0px 4px;
+}

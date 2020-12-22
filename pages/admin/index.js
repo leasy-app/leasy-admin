@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import Sidebar from '../../components/sidebar/sidebar';
 import StatsPage from '../../components/pages/stats';
 import CatsPage from '../../components/pages/cats';
+import PostsPage from '../../components/pages/posts';
 
 export default function Admin() {
   let router = useRouter();
@@ -43,6 +44,8 @@ export default function Admin() {
                 return <StatsPage/>
               }else if(state.page === 1){
                 return <CatsPage/>
+              }else if(state.page === 2){
+                return <PostsPage/>
               }
             })()
           }
