@@ -3,7 +3,7 @@ import Input from "../input/input";
 import Button from "../button/button";
 import cn from "classnames";
 import {useRef, useState} from "react";
-import { addCategory, uploadFile, useCategories } from '../../lib/logic/api';
+import { addCategory, imageAddr, uploadFile, useCategories } from '../../lib/logic/api';
 
 export default function CatsPage({className}){
     const [state, setState] = useState({
@@ -83,10 +83,9 @@ export default function CatsPage({className}){
 }
 
 function CatTile({image , name, id}) {
-    let i2 = image ? image : "";
     return <div className={styles.tile}>
 
-        <img src={i2.startsWith("cimg-") ? "https://calm-hamlet-80940.herokuapp.com/polls/download?dis=" + i2 : undefined} className={styles.background}/>
+        <img src={imageAddr(image)} className={styles.background}/>
         <div className={styles.blackCover}></div>
         <span className={styles.tileVal}>
             {name}
