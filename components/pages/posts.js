@@ -33,8 +33,8 @@ export default function PostsPage({className}){
                     id: post.Id,
                     title: post.Name,
                     desc: post.Summary,
-                    authorPhoto: "",
-                    author: post.Writer_id,
+                    authorPhoto: post.authorPhoto,
+                    author: post.authorName,
                     date: post.Create_time,
                     image: post.Header_photo
                 };
