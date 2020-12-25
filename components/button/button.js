@@ -1,9 +1,7 @@
 import styles from './button.module.scss';
 
 export default function Button({icon, value, trigger}){
-    return <div className={styles.button} onClick={()=>{
-       trigger && trigger();
-    }}>
+    return <div className={styles.button} onClick={trigger}>
         {icon ? <div className={styles.icon}>
             {icon}
         </div> : undefined}
