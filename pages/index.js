@@ -8,13 +8,21 @@ import { useRouter } from 'next/router'
 
 export default function Login() {
   let router = useRouter();
-  const [state, setState] = useState({});
+  const [state, setState] = useState({bName:"Login"});
   useEffect(()=>{
     if(Auth.isAuthorized()){
       router.push('/admin');
       return;
     }
   });
+  useEffect(async ()=>{
+    if(state.bName !== "Login"){
+      let x = await Auth.login(state.uname, state.pwd);
+      if(x){
+        router.push('/admin');
+      }
+    }
+  }, [state.bName]);
   return (
     <div className={styles.container}>
       <Head>
@@ -30,11 +38,8 @@ export default function Login() {
         </div>
         <Input hint={"Username"} value={state.uname} trigger={v => setState({...state, uname:v})}/> 
         <Input hint={"Password"} value={state.pwd} hide={true} trigger={v => setState({...state, pwd:v})}/> 
-        <Button icon={<img src="/images/enter.png"/>} value={"Login"} trigger={()=>{
-          let x = Auth.login(state.uname, state.pwd);
-          if(x){
-            router.push('/admin');
-          }
+        <Button icon={<img src="/images/enter.png"/>} value={state.bName} trigger={async ()=>{
+          setState({...state, bName: "Checking..."});
         }}/>
       </div>
     </div>
