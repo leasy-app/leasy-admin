@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js",
+    "start": "next start -p $PORT",
     "release": "cross-env NODE_ENV=production next build"
   },
   "dependencies": {
