@@ -35,7 +35,7 @@ Then wait until the build is complete and your panel is up.
 Login             |  Stats
 :-------------------------:|:-------------------------:
 <img src="https://github.com/leasy-app/leasy-admin/blob/main/shots/login.png?raw=true" width="360" />  |  <img src="https://github.com/leasy-app/leasy-admin/blob/main/shots/stats.png?raw=true" width="360" />
-Posts             |  Courses
-<img src="https://github.com/leasy-app/leasy-admin/blob/main/shots/posts.png?raw=true" width="360" />  |  <img src="https://github.com/leasy-app/leasy-admin/blob/main/shots/courses.png?raw=true" width="360" />
-Users            |   -
-<img src="https://github.com/leasy-app/leasy-admin/blob/main/shots/users.png?raw=true" width="360" />  |  -
+Categories             |  Posts
+<img src="https://github.com/leasy-app/leasy-admin/blob/main/shots/categories.png?raw=true" width="360" />  |  <img src="https://github.com/leasy-app/leasy-admin/blob/main/shots/posts.png?raw=true" width="360" />
+Courses            |   Users
+<img src="https://github.com/leasy-app/leasy-admin/blob/main/shots/courses.png?raw=true" width="360" />  |  <img src="https://github.com/leasy-app/leasy-admin/blob/main/shots/users.png?raw=true" width="360" />
