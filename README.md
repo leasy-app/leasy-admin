@@ -1,7 +1,7 @@
 # Leasy Admin
 Leasy Next.js Admin Panel
 
-## Technolgoies
+## Technologies
 * Node.js
 * Next.js/React.js
 * SWR Data Fetching (HTTP RFC 5861 | Stale While Revalidatie)
